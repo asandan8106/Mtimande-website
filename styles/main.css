@@ -1,165 +1,218 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(45deg, #e63946, #002e5d, #ffffff, #000000);
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
+    color: #333;
 }
 
 /* Header and Navigation */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(45deg, #e63946, #002e5d, #ffffff, #000000);
+header {
+    background: linear-gradient(45deg, #e63946, #002e5d);
     color: white;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar .logo h1 {
-    font-size: 30px;
+    font-size: 24px;
+    margin: 0;
+    flex: 1;
 }
 
 .icon-bar {
     display: flex;
     gap: 20px;
+    justify-content: flex-end;
+    flex: 2;
 }
 
 .icon-bar a {
     color: white;
-    font-size: 18px;
     text-decoration: none;
-    padding: 10px;
+    font-size: 18px;
+    padding: 10px 15px;
     transition: background-color 0.3s ease;
 }
 
-.icon-bar a:hover, .icon-bar a.active {
-    background-color: #e63946;
+.icon-bar a:hover, 
+.icon-bar a.active {
+    background-color: #ff4c4c;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(45deg, #002e5d, #e63946);
+/* Home Section */
+.home-section {
+    text-align: center;
     padding: 100px 20px;
-    text-align: center;
+    color:#ff4c4c;
+    position: relative;
 }
 
-.hero h2 {
-    font-size: 50px;
-    margin-bottom: 10px;
+.home-section .content h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
 }
 
-.hero p {
+.home-section .content h1 span {
+    color: #ff4c4c;
+}
+
+.home-section .content p {
     font-size: 20px;
-    margin-top: 10px;
+    margin: 0 0 20px;
 }
 
-/* Service Cards Section */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-}
-
-.service-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.service-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.service-card h3 {
-    font-size: 24px;
-    margin-top: 15px;
-    color: #002e5d;
-}
-
-.service-card p {
+.home-section .btnArea .btn {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
     font-size: 16px;
-    color: #555;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.home-section .btnArea .btn:hover {
+    background-color: #ff4c4c;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 40px 20px;
     background-color: #001f3d;
     color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content div {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+    color: #e63946;
+}
+
+.footer-content .contact-info p {
+    margin: 5px 0;
+}
+
+.footer-content .newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content .newsletter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-content .newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-content .newsletter button:hover {
+    background-color: #ff4c4c;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #ddd;
     font-size: 14px;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.hero, .services {
-    animation: fadeIn 2s ease-out;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .service-card {
-        padding: 15px;
+    .navbar .logo h1 {
+        font-size: 20px;
     }
 
-    .hero h2 {
-        font-size: 40px;
+    .icon-bar a {
+        font-size: 16px;
+        padding: 8px 12px;
     }
 
-    .hero p {
+    .home-section .content h1 {
+        font-size: 36px;
+    }
+
+    .home-section .content p {
         font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .icon-bar a {
-        font-size: 14px;
-        padding: 8px;
+    .home-section {
+        padding: 50px 20px;
     }
 
-    .hero h2 {
-        font-size: 30px;
+    .home-section .content h1 {
+        font-size: 28px;
     }
 
-    .hero p {
+    .home-section .content p {
         font-size: 16px;
     }
 
-    .service-card h3 {
-        font-size: 20px;
-    }
-
-    .service-card p {
+    .icon-bar a {
         font-size: 14px;
-    }
-
-    footer p {
-        font-size: 12px;
+        padding: 6px 10px;
     }
 }

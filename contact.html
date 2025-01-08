@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catering Services - Mtimande Trade and Project Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Us - Mtimande</title>
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h1>Mtimande Trade and Project Solutions</h1>
+                <h1>Mtimande</h1>
             </div>
             <div class="icon-bar">
                 <a href="index.html"><i class="fa fa-home"></i> Home</a>
@@ -19,35 +20,61 @@
                 <a href="transportation.html"><i class="fa fa-truck"></i> Transportation</a>
                 <a href="toilets.html"><i class="fa fa-bath"></i> Toilets</a>
                 <a href="fridges.html"><i class="fa fa-snowflake-o"></i> Fridges</a>
-                <a href="catering.html" class="active"><i class="fa fa-cutlery"></i> Catering</a>
+                <a href="contact.html" class="active"><i class="fa fa-phone"></i> Contact</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Catering Equipment</h2>
-            <p>Equip your event with quality catering tools and services.</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Get in Touch</h1>
+            <p>We are here to answer your questions and assist you in any way we can.</p>
+        </div>
+    </section>
 
-        <section class="services">
-            <div class="service-card">
-                <img src="images/catering.jpg" alt="Catering">
-                <h3>Catering Tools</h3>
-                <p>We provide high-quality tools for your catering needs.</p>
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
-            <div class="service-card">
-                <img src="images/catering-details.jpg" alt="Catering Details">
-                <h3>Complete Catering Packages</h3>
-                <p>From cookware to serving, we offer full catering solutions.</p>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
-        </section>
-    </main>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <h2>Our Contact Information</h2>
+        <p><i class="fa fa-phone"></i> Call us: +27 123 456 7890</p>
+        <p><i class="fa fa-envelope"></i> Email: info@mtimande.com</p>
+        <p><i class="fa fa-map-marker"></i> Address: City Center, South Africa</p>
+        <div class="social-links">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mtimande Trade and Project Solutions. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Mtimande Trade and Project Solutions. All Rights Reserved.</p>
+        </div>
     </footer>
-
-    <script src="js/scripts.js"></script>
 </body>
 </html>
