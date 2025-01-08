@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #e63946, #002e5d, #ffffff, #000000);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.icon-bar {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(45deg, #e63946, #002e5d);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.icon-bar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-bar a:hover, .icon-bar a.active {
+    background-color: #e63946;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #002e5d, #e63946);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* About Mobile Fridges Section */
+.about-fridge {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about-fridge h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-fridge p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-fridge ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-fridge ul li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.about-fridge ul li i {
+    color: #e63946;
+    margin-right: 10px;
+}
+
+.about-fridge .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Image Section */
+.about-fridge .image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-fridge .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(45deg, #002e5d, #e63946);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.cta p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #d13534;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #001f3d;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-fridge h2 {
+        font-size: 30px;
+    }
+
+    .about-fridge p {
+        font-size: 16px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
+    .cta .btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
