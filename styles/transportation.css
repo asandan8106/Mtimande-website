@@ -8,42 +8,33 @@ body {
 }
 
 /* Header and Navigation */
-header {
-    background: linear-gradient(45deg, #e63946, #002e5d);
-    color: white;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(45deg, #e63946, #002e5d, #ffffff, #000000);
+    padding: 20px;
+    color: white;
 }
 
 .navbar .logo h1 {
-    font-size: 24px;
     margin: 0;
+    font-size: 36px;
 }
 
 .icon-bar {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    padding: 10px 0;
 }
 
 .icon-bar a {
     color: white;
+    padding: 12px 20px;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
     transition: background-color 0.3s ease;
 }
 
-.icon-bar a:hover, 
-.icon-bar a.active {
-    background-color: #ff4c4c;
+.icon-bar a:hover {
+    background-color: #e63946;
 }
 
 /* Hero Section */
