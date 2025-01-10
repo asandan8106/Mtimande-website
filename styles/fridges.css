@@ -98,10 +98,11 @@ body {
 }
 
 .about-fridge .image img {
-    width: 100%;
+    width: 200px;
     max-width: 500px;
     border-radius: 10px;
 }
+
 
 /* Call to Action Section */
 .cta {

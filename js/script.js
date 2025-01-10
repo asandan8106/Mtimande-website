@@ -7,3 +7,8 @@ document.querySelectorAll('.icon-bar a').forEach(anchor => {
         });
     });
 });
+document.querySelector(".navbar a").addEventListener("click", function(event) {
+    // Ensure no preventDefault() or stopPropagation() is unintentionally blocking the navbar
+});
+
+
