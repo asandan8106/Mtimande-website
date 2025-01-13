@@ -32,18 +32,20 @@
             <p>Your one-stop solution for events, transportation, and equipment hire.</p>
             <p>We are here to make your events stress-free and successful. Let's work together!</p>
             <div class="btnArea">
-                <button onclick="toggleContent()" class="btn">Learn More</button>
+                <button onclick="openModal()" class="btn">Learn More</button>
             </div>
-            <div id="moreContent" ></div>
-                <h2>About Us</h2>
-                <p>We provide innovative solutions in event management, transportation, and equipment hire. Our team ensures quality and efficiency in every project we handle.</p>
-                <h3>Our Core Values</h3>
-                <ul>
-                    <li>Reliability</li>
-                    <li>Customer Satisfaction</li>
-                    <li>Innovation</li>
-                    <li>Integrity</li>
-                </ul>
+            <div id="infoModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span onclick="closeModal()" class="close">&times;</span>
+                    <h2>About Mtimande</h2>
+                    <p>Mtimande is your trusted partner for event management, transportation, and logistics. We are committed to delivering exceptional service that exceeds your expectations.</p>
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Event Planning and Coordination</li>
+                        <li>Reliable Transportation Services</li>
+                        <li>Portable Toilets and Refrigeration Units</li>
+                    </ul>
+                </div>
             </div>
             
     </section>
@@ -76,5 +78,6 @@
             <p>&copy; 2025 Mtimande Trade and Project Solutions. All Rights Reserved.</p>
         </div>
     </footer>
-</body>
-</html>
+    <script src="js/script.js"></script>
+   </body>
+   </html>
