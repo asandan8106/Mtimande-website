@@ -68,8 +68,10 @@ body {
 .home-section {
     text-align: center;
     padding: 100px 20px;
-    color:#ff4c4c;
+    color:rgb(91, 111, 202);
     position: relative;
+    font-weight: 400;
+    font-style:italic;
 }
 
 .home-section .content h1 {

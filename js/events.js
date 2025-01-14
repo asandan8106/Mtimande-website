@@ -17,23 +17,17 @@ document.querySelectorAll('.icon-bar a').forEach(anchor => {
         // For external links (to other pages), do nothing and let the browser navigate
     });
 });
+// JavaScript to open the modal
 
-/// Open the modal
-function openModal() {
-    const modal = document.getElementById('aboutModal');
-    modal.style.display = 'block'; // Display the modal
-}
 
-// Close the modal
-function closeModal() {
-    const modal = document.getElementById('aboutModal');
-    modal.style.display = 'none'; // Hide the modal
-}
-
-// When the user clicks anywhere outside the modal, close it
-window.onclick = function(event) {
-    const modal = document.getElementById('aboutModal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
+function openModal(service) {
+    const modal = document.getElementById(service); // Get the modal by service ID
+    if (modal) {
+        modal.style.display = 'block'; // Display the modal
     }
+}
+
+// JavaScript to close the modal
+function closeModal(service) {
+    const modal = document.getElementById
 }

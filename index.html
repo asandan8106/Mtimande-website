@@ -28,27 +28,35 @@
     <!-- Home Section with Welcome Message -->
     <section class="home-section" style="background-image: url('images/Mtimande\ picture.jpg'); background-size: cover;">
         <div class="content">
-            <h1>Welcome to <span>Mtimande</span></h1>
+            <h1>Welcome Kwa <span>Mtimande</span></h1>
             <p>Your one-stop solution for events, transportation, and equipment hire.</p>
             <p>We are here to make your events stress-free and successful. Let's work together!</p>
             <div class="btnArea">
                 <button onclick="openModal()" class="btn">Learn More</button>
             </div>
-            <div id="infoModal" class="modal" style="display: none;">
-                <div class="modal-content">
-                    <span onclick="closeModal()" class="close">&times;</span>
-                    <h2>About Mtimande</h2>
-                    <p>Mtimande is your trusted partner for event management, transportation, and logistics. We are committed to delivering exceptional service that exceeds your expectations.</p>
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li>Event Planning and Coordination</li>
-                        <li>Reliable Transportation Services</li>
-                        <li>Portable Toilets and Refrigeration Units</li>
-                    </ul>
-                </div>
-            </div>
-            
+        </div>
     </section>
+
+    <!-- Modal Section for About Us -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>About Us</h2>
+            <p>At Mtimande Trading & Projects, we are dedicated to making your event an extraordinary experience. Specializing in event planning, catering, and entertainment, we work closely with our clients to create seamless, customized solutions that bring their vision to life. Whether it’s a corporate function, wedding, festival, or any other occasion, our team ensures every detail is perfectly executed.</p>
+            <p>We offer a wide range of services to make your event stand out. Our event planning services include stylish stretch tents, thoughtfully designed furniture, and professional sound and lighting setups. We also provide staging, VIP areas, and entertainment options to suit any type of event.</p>
+            <p>Catering is at the heart of what we do, and we pride ourselves on delivering delicious and varied menus tailored to your needs. Whether you’re hosting a small gathering or a large-scale event, we provide exceptional food that leaves a lasting impression.</p>
+            <p>To ensure your event runs smoothly, we offer additional services such as premium fridge rentals for keeping your beverages and perishables at the perfect temperature, as well as clean and fully serviced executive toilet facilities for hire.</p>
+            <p>When it comes to entertainment, our sound systems and DJ services will set the tone and keep the energy high throughout your event. From intimate gatherings to large parties, we ensure your guests are entertained and your event runs effortlessly.</p>
+            <p>At Mtimande Trading & Projects, our commitment to quality and customer satisfaction ensures that every event is memorable and stress-free, allowing you to focus on what truly matters—enjoying the occasion.</p>
+            <h3>Our Core Values</h3>
+            <ul>
+                <li>Reliability</li>
+                <li>Customer Satisfaction</li>
+                <li>Innovation</li>
+                <li>Integrity</li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -78,6 +86,7 @@
             <p>&copy; 2025 Mtimande Trade and Project Solutions. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
-   </body>
-   </html>
+</body>
+</html>
