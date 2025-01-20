@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtimande - Events</title>
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Mtimande</h1>
+            </div>
+            <div class="icon-bar">
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+                <a href="events.html"><i class="fa fa-calendar"></i> Events</a>
+                <a href="transportation.html"><i class="fa fa-truck"></i> Transportation</a>
+                <a href="toilets.html"><i class="fa fa-bath"></i> Toilets</a>
+                <a href="fridges.html"><i class="fa fa-snowflake-o"></i> Fridges</a>
+                <a href="contact.html" class="active"><i class="fa fa-phone"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Events Services</h2>
+        <p>Making your moments unforgettable with our professional event services.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2 class="section-title">Our Event Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fa fa-calendar fa-3x"></i>
+                <h3>Event Planning</h3>
+                <p>Comprehensive planning to bring your vision to life.</p>
+                <button class="btn" onclick="openModal('event-planning')">Read More</button>
+            </div>
+            <div class="card">
+                <i class="fa fa-cutlery fa-3x"></i>
+                <h3>Catering</h3>
+                <p>Delicious menus tailored to suit your event's theme.</p>
+                <button class="btn" onclick="openModal('catering')">Read More</button>
+            </div>
+            <div class="card">
+                <i class="fa fa-music fa-3x"></i>
+                <h3>Entertainment</h3>
+                <p>Live music, DJs, and more to keep your guests entertained.</p>
+                <button class="btn" onclick="openModal('entertainment')">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for displaying Event Planning details -->
+    <div id="event-planning" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('event-planning')">&times;</span>
+            <h2>Event Planning</h2>
+            <img src="images/events1.jpg" alt="Event Planning" class="service-image">
+            <p>Our event planning team provides expert coordination to ensure your event goes smoothly. From managing vendors to handling logistics, we ensure every detail is taken care of.We offer end-to-end event management, transforming your vision into reality.</p>
+            <h3>What We Offer:</h3>
+            <ul>
+                <li>Creative and modern stretch tents for any event setting</li>
+                <li>Customizable flooring, furniture, sound, and lighting arrangements</li>
+                <li>Professional staging, VIP areas, and performer bookings</li>
+                <li>Logistics Management</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal for displaying Catering details -->
+    <div id="catering" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('catering')">&times;</span>
+            <h2>Catering</h2>
+            <img src="images/catering food 2.jpg" alt="Catering" class="service-image">
+            <p>Our catering services offer delicious, custom-tailored menus that match the theme and style of your event. Our catering services are designed to impress with a wide range of delicious and thoughtfully prepared menu options, tailored to suit any occasion. Whether it's a corporate event, wedding, or festival, we ensure your guests enjoy high-quality, flavorful food.</p>
+            <h3>Our Menu Includes:</h3>
+            <ul>
+                <li>Finger Foods & Snacks</li>
+                <li>Plated Meals</li>
+                <li>Buffet Style Options</li>
+                <li>Special Dietary Accommodations</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal for displaying Entertainment details -->
+    <div id="entertainment" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('entertainment')">&times;</span>
+            <h2>Entertainment</h2>
+            <img src="images/sound1.jpg" alt="Entertainment" class="service-image">
+            <p>Our entertainment options include live bands, DJs, and interactive experiences to keep your guests engaged and entertained throughout the event.</p>
+            <h3>Entertainment Options:</h3>
+            <ul>
+                <li>Sound and lighting equipment setup for a dynamic atmosphere</li>
+                <li>  DJ services to keep the energy flowing and the crowd engaged</li>
+                <li>Interactive Games</li>
+                <li>Photo Booths</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><i class="fa fa-phone"></i> Call: +27 82 678 3343/+27 82 433 5370/+27 61 802 3452</p>
+                <p><i class="fa fa-envelope"></i> Email: info@Mtimandetps.co.za</p>
+                <p><i class="fa fa-map-marker"></i> Location: 6A Smuts street Meyerviee, Standerton 2430</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2024 Mtimande Trade and Project Solutions</p>
+    </footer>
+
+    <script src="js/events.js"></script>
+</body>
+</html>

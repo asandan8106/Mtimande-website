@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Transportation - Mtimande</title>
+    <link rel="stylesheet" href="styles/booking.css">
+</head>
+<body>
+    <header>
+        <h1>Book Transportation</h1>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Complete Your Booking</h2>
+            
+            <!-- Flex container for buttons -->
+            <div class="buttons-container">
+                <!-- Back Button -->
+                <a href="transportation.html" class="btn back-btn">Back to Transportation</a>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn submit-btn">Submit Booking</button>
+            </div>
+
+            <form action="submit-booking.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="event">Event Transportation</option>
+                    <option value="airport">Airport Transfers</option>
+                    <option value="corporate">Corporate Shuttle Services</option>
+                    <option value="group">Group Travel Solutions</option>
+                    <option value="abnormal">Abnormal Loads</option>
+                    <option value="plant">Plant Hire</option>
+                </select>
+
+                <label for="message">Additional Notes:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter any additional details..."></textarea>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mtimande Trade and Project Solutions. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
