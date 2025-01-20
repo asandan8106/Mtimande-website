@@ -32,26 +32,40 @@ cd Mtimande-website
 Open index.html in your browser to view the website. 🌍
 
 Usage 🖥️
+
 Explore the various pages and sections of the website.
+
 Interact with forms, buttons, and links to get a feel of the dynamic content.
+
 Contributing 🤝
+
 We welcome contributions! If you have suggestions or bug fixes, feel free to fork this repository, create a branch, and submit a pull request.
 
 Fork the repository.
+
 Create a new branch: git checkout -b feature/your-feature
+
 Commit your changes: git commit -am 'Add new feature'
+
 Push to the branch: git push origin feature/your-feature
+
 Create a pull request.
+
 License 📄
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Deployment Link
+
 https://mtimande-website.onrender.com
 
 
 Contact 📧
+
 If you have any questions or feedback, feel free to reach out to me at:
 
 Email: asanda@example.com 📩
+
 LinkedIn: Asanda Ngwenya 💼
+
 Twitter: @AsandaNgwenya 🐦
