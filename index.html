@@ -3,51 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mtimande Trade and Project Solutions - Home</title>
+    <title>Mtimande Trade and Project Solutions</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Header and Navigation -->
+
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/Mtimande picture.jpg" alt="Mtimande Logo">
-                <h1>Mtimande Trade and Project Solutions</h1>
-            </div>
+        <div class="logo">
+            <img src="images/Mtimande picture.jpg" alt="Mtimande Logo">
+            <h1>Mtimande Trade and Project Solutions</h1>
+        </div>
+        <nav>
             <div class="icon-bar">
-                <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
                 <a href="events.html"><i class="fa fa-calendar"></i> Events</a>
                 <a href="transportation.html"><i class="fa fa-truck"></i> Transportation</a>
                 <a href="toilets.html"><i class="fa fa-bath"></i> Toilets</a>
                 <a href="fridges.html"><i class="fa fa-snowflake-o"></i> Fridges</a>
-                <a href="contact.html"><i class="fa fa-phone"></i> Contact</a>
+                <a href="contact.html" class="active"><i class="fa fa-phone"></i> Contact</a>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section with Welcome Message -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome Kwa <span>Mtimande</span></h1>
-            <p>Your one-stop solution for events, transportation, and equipment hire.</p>
-            <p>We are here to make your events stress-free and successful. Let's work together!</p>
-            <div class="btnArea">
-                <button onclick="openModal()" class="btn">Learn More</button>
+        <div class="hero-image-container">
+            <!-- Logo Overlay on top of Hero Image -->
+            <div class="logo-overlay">
+                <!-- Curved Text Above Logo (Less Arched) -->
+                <svg viewBox="0 0 200 100" class="curved-text" width="300" height="100">
+                    <defs>
+                        <path id="gentleCurve" d="M 30,80 A 140,60 0 0,1 170,80" fill="transparent"/>
+                    </defs>
+                    <text width="200" font-size="16" text-anchor="middle">
+                        <textPath href="#gentleCurve" startOffset="50%">Mtimande Pty Ltd</textPath>
+                    </text>
+                </svg>
+                <img src="images/Mtimande picture.jpg" alt="Mtimande Logo">
             </div>
+            <!-- Hero Image -->
+            <img id="hero-img" src="images/hero1.jpg" alt="Event Planning">
+        </div>
+
+        <div class="hero-text">
+            <h2>Welcome Kwa <span class="highlight">Mtimande</span></h2>
+            <p>Your one-stop solution for events, transportation, and equipment hire.</p>
+            <p>We make your events stress-free and successful. Let’s work together!</p>
+            <button id="openModal">Learn More</button>
         </div>
     </section>
 
-    <!-- Modal Section for About Us -->
-    <div id="aboutModal" class="modal">
+    <!-- Modal Structure -->
+    <div id="infoModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>About Us</h2>
-            <p>At Mtimande Trading & Projects, we are dedicated to making your event an extraordinary experience. Specializing in event planning, catering, and entertainment, we work closely with our clients to create seamless, customized solutions that bring their vision to life. Whether it’s a corporate function, wedding, festival, or any other occasion, our team ensures every detail is perfectly executed.</p>
+            <span class="close">&times;</span>
+            <h2>About Mtimande Trading & Projects</h2>
+            <p>At Mtimande Trading & Projects, we are dedicated to making your event an extraordinary experience. Specializing in event planning, catering, and entertainment, we work closely with our clients to create seamless, customized solutions that bring their vision to life.</p>
             <p>We offer a wide range of services to make your event stand out. Our event planning services include stylish stretch tents, thoughtfully designed furniture, and professional sound and lighting setups. We also provide staging, VIP areas, and entertainment options to suit any type of event.</p>
-            <p>Catering is at the heart of what we do, and we pride ourselves on delivering delicious and varied menus tailored to your needs. Whether you’re hosting a small gathering or a large-scale event, we provide exceptional food that leaves a lasting impression.</p>
-            <p>To ensure your event runs smoothly, we offer additional services such as premium fridge rentals for keeping your beverages and perishables at the perfect temperature, as well as clean and fully serviced executive toilet facilities for hire.</p>
-            <p>When it comes to entertainment, our sound systems and DJ services will set the tone and keep the energy high throughout your event. From intimate gatherings to large parties, we ensure your guests are entertained and your event runs effortlessly.</p>
+            <p>Catering is at the heart of what we do, and we pride ourselves on delivering delicious and varied menus tailored to your needs.</p>
+            <p>To ensure your event runs smoothly, we offer additional services such as premium fridge rentals and fully serviced executive toilet facilities for hire.</p>
             <h3>Our Core Values</h3>
             <ul>
                 <li>Reliability</li>
@@ -58,35 +74,12 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <p><i class="fa fa-phone"></i> Call: +27 82 678 3343 / +27 82 433 5370 / +27 61 802 3452</p>
-                <p><i class="fa fa-envelope"></i> Email: info@Mtimandetps.co.za</p>
-                <p><i class="fa fa-map-marker"></i> Location: 6A Smuts street Meyerviee, Standerton 2430</p>
-            </div>
-            <div class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="events.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <h3>Sign Up for Our Newsletter</h3>
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mtimande Trade and Project Solutions. All Rights Reserved.</p>
-        </div>
+        <p>Call: +27 82 678 3343 / +27 82 433 5370 / +27 61 802 3452</p>
+        <p>Email: info@mtimandetps.co.za</p>
+        <p>Location: 6A Smuts Street, Meyerville, Standerton 2430</p>
+        <p>&copy; 2025 Mtimande Trade and Project Solutions. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
