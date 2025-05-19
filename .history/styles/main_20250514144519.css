@@ -56,7 +56,7 @@ header img {
 
 /* Hero Text Adjustments */
 .hero-text {
-    margin-left: 40px;
+    margin-left: 40px; /* Moves text slightly to the right */
 }
 
 /* Hero Image Container */
@@ -65,7 +65,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 20px; /* Moves image lower */
 }
 
 /* Hero Image */
@@ -80,7 +80,7 @@ header img {
 /* Logo Overlay */
 .logo-overlay {
     position: absolute;
-    top: 15%;
+    top: 15%; /* Adjusted to fit better */
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
@@ -92,8 +92,6 @@ header img {
     flex-direction: column;
     align-items: center;
 }
-
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -115,7 +113,6 @@ header img {
     width: 50%;
     max-width: 600px;
     text-align: center;
-    position: relative;
 }
 
 .close {
@@ -143,36 +140,36 @@ header img {
 /* Curved Text Above Logo */
 .curved-text {
     position: absolute;
-    top: -15px;
+    top: -15px; /* Adjusted for better alignment */
     left: 50px;
     transform: translateX(-50%);
     width: 150px;
     height: 30px;
     font-size: 50px;
     font-weight: bold;
-    fill: #0a0f2b;
+    fill: #0a0f2b; /* Changed to blue as requested */
     text-transform: uppercase;
 }
-
 /* Button Styles */
 .hero-text button {
-    background: linear-gradient(135deg, #c9252e, #a81f26);
+    background: linear-gradient(135deg, #c9252e, #a81f26); /* Gradient for a stylish effect */
     color: white;
     padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
     border: none;
-    border-radius: 30px;
+    border-radius: 30px; /* Rounded edges */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
 .hero-text button:hover {
-    background: linear-gradient(135deg, #a81f26, #c9252e);
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #a81f26, #c9252e); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow for pop effect */
 }
+
 
 /* Footer */
 footer {
